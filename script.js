@@ -25,7 +25,11 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', setNumber);
 
 function setNumber() {
-    const sketchNumber = prompt("How many squares per side?");
+    const sketchNumber = prompt("How many squares per side?", "up to 100");
+    if (sketchNumber > 100) {
+        alert("too high!");
+        return "ERROR";
+    }
     document.querySelectorAll('.sketch-pixel').forEach(e => e.remove());
 
     for (let i = 0; i < (sketchNumber * sketchNumber); i++) {
