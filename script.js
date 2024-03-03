@@ -5,6 +5,7 @@ sketchPixel.className = 'sketch-pixel';
 
 for (let i = 0; i < 16; i++) {
     containerSketch.appendChild(sketchPixel.cloneNode(true));
+    sketchPixel.style.flexBasis = '237px';
 }
 
 const sketchList = document.querySelectorAll('.sketch-pixel');
@@ -28,8 +29,8 @@ function setNumber() {
     }
 
     document.querySelectorAll('.sketch-pixel').forEach((div) => {
-        div.style.height = `${960 / Math.sqrt(sketchNumber)}px`;
-        div.style.flexBasis = `${960 / Math.sqrt(sketchNumber)}px`;
+        div.style.height = `${960 / Math.sqrt(sketchNumber) - 3}px`;
+        div.style.flexBasis = `${960 / Math.sqrt(sketchNumber) - 3}px`;
         div.addEventListener('mouseover', (e) => {
             e.target.style.backgroundColor = 'red';
         })

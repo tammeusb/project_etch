@@ -20,6 +20,7 @@ body {
 }
 
 .sketch {
+    box-sizing: border-box;
     flex: 1;
 
     background-color: rgb(255, 240, 240);
