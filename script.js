@@ -1,3 +1,4 @@
+const content = document.querySelector('.content');
 const containerSketch = document.querySelector('.container-sketch');
 const sketchPixel = document.createElement('div');
 sketchPixel.className = 'sketch-pixel';
@@ -13,3 +14,23 @@ sketchList.forEach((div) => {
         e.target.style.backgroundColor = 'red';
     })
 });
+
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', setNumber);
+
+function setNumber() {
+    const sketchNumber = prompt("How many squares?");
+    sketchList.forEach(e => e.remove());
+
+    for (let i = 0; i < sketchNumber; i++) {
+        containerSketch.appendChild(sketchPixel.cloneNode(true));
+    }
+
+    document.querySelectorAll('.sketch-pixel').forEach((div) => {
+        div.addEventListener('mouseover', (e) => {
+            e.target.style.backgroundColor = 'red';
+        })
+    });
+    
+}
