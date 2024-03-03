@@ -9,4 +9,19 @@ body {
 
 .content {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-sketch {
+    display: flex;
+    width: 50px;
+    flex-wrap: wrap;
+}
+
+.sketch-pixel {
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
 }
