@@ -28,6 +28,8 @@ function setNumber() {
     }
 
     document.querySelectorAll('.sketch-pixel').forEach((div) => {
+        div.style.height = `${960 / Math.sqrt(sketchNumber)}px`;
+        div.style.flexBasis = `${960 / Math.sqrt(sketchNumber)}px`;
         div.addEventListener('mouseover', (e) => {
             e.target.style.backgroundColor = 'red';
         })

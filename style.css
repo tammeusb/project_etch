@@ -5,6 +5,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 .content {
@@ -16,12 +17,14 @@ body {
 
 .container-sketch {
     display: flex;
-    height: 960px;
     width: 960px;
+    height: 960px;
     flex-wrap: wrap;
 }
 
 .sketch-pixel {
-    flex:1;
+    flex: 1;
+    flex-basis: 240px;
+    height: 240px;
     border: 1px solid black;
 }
