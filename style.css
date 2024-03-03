@@ -6,6 +6,16 @@ body {
     align-items: center;
     height: 100vh;
     box-sizing: border-box;
+    font-size: 50px;
+}
+
+header, footer {
+    padding: 30px;
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
@@ -27,7 +37,11 @@ body {
 }
 
 .sketch-pixel {
-    flex: 1;
-    flex-basis: 237px;
     border: 1px solid black;
+}
+
+button {
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
 }
