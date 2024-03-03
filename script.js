@@ -21,7 +21,7 @@ btn.addEventListener('click', setNumber);
 
 function setNumber() {
     const sketchNumber = prompt("How many squares?");
-    sketchList.forEach(e => e.remove());
+    document.querySelectorAll('.sketch-pixel').forEach(e => e.remove());
 
     for (let i = 0; i < sketchNumber; i++) {
         containerSketch.appendChild(sketchPixel.cloneNode(true));

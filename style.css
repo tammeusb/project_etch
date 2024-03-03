@@ -16,12 +16,12 @@ body {
 
 .container-sketch {
     display: flex;
-    width: 500px;
+    height: 960px;
+    width: 960px;
     flex-wrap: wrap;
 }
 
 .sketch-pixel {
-    height: 100px;
-    width: 100px;
+    flex:1;
     border: 1px solid black;
 }
